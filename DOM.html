@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky.1137</title>
+    <link rel="icon" href="Levi.png">
+    <link rel="stylesheet" href="DOM.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="form">
+            <h2>Pendaftaran Pasukan Militer</h2>
+            <div>
+                <label for="">Nama Lengkap :</label><br>
+                <input id="nama" class="nama" type="text" placeholder="Nama" required autofocus autocomplete="off"><br><br>
+            </div>
+            <div>
+                <label for="">Pilihan Divisi :</label><br>
+                <select name="" id="divisi">
+                    <option value="Pasukan Penjaga"> Pasukan Penjaga ( Stationary Gruard ) </option>
+                    <option value="Pasukan Pengintai"> Pasukan Pengintai ( Scouting Legion ) </option>
+                    <option value="Kepolisian Militer"> Kepolisian Militer ( Military Police ) </option>
+                </select>
+            </div>
+            <br>
+            <div class="push">
+                <button type="button" onClick='cekinputan()' class="simpan">Login</button>
+                <button type="reset" class="batal">Batal</button>
+            </div>
+        </div>
+        <button type="button" onclick="hint()">Hint Login</button>
+        <div class="row">
+            <table class="table" id="databel">
+                <thead>
+                    <tr>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Divisi</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="DOM.js"></script>
+</body>
+
+</html>
